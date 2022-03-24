@@ -1,0 +1,57 @@
+#AmazingApps {
+    padding: 30px 0px;
+    background-color: $bgColor;
+    font-family: $firstFamily;
+
+    .wrapper {
+        h1 {
+            font-size: $h1FontSize;
+            font-weight: 600;
+            line-height: 1em;
+            padding: 60px 10px;
+            position: relative;
+            &::before {
+                @include BeforeLine;
+            }
+            @media (max-width:768px) {
+                font-size: 43px;
+                
+            }
+        }
+        p {
+            @include TextParagraph;
+            @media (max-width:576px) {
+                width: 300px;
+                text-align: start;
+                margin: 0 auto;
+                
+            }
+        }
+        .StoreImg {
+            padding: 25px 0px;
+            display: flex;
+            align-items: center;
+            @media (max-width:576px) {
+                flex-wrap: wrap;
+                justify-content: center;
+                
+            }
+            img {
+                object-fit: cover;
+            }
+            .AppleIcon {
+                margin-right: 20px;
+                @media (max-width:576px) {
+                    margin: 0;
+                    
+                }
+            }
+        }
+    }
+    .RightSideApp {
+        img {
+            max-width: 100%;
+            object-fit: cover;
+        }
+    }
+}

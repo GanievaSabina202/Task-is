@@ -1,0 +1,23 @@
+$firstFamily:'Barlow Condensed', sans-serif;
+$BlackColor:#000;
+$TextFont: 17px;
+$whiteColor:#f0f0f0;
+$bgColor:#f6f6f6;
+$SocialText:20px;
+$h1FontSize: 65px;
+$TextHoverColor:#555;
+
+*,*::before,*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}

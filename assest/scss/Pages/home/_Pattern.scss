@@ -1,0 +1,68 @@
+#Pattern {
+    font-family: $firstFamily;
+    height: 450px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media (max-width:768px) {
+        height: 400px;
+        
+    }
+    .PatternHead{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h1 {
+            color: $whiteColor;
+            font-size: 30px;
+            line-height: 1.06em;
+            text-align: center;
+            padding-top: 110px;
+            padding-right: 161px;
+            padding-left: 161px;
+            @media (max-width:768px) {
+                font-size: 23px;
+                line-height: 1.06em;
+                text-align: center;
+                padding-top: 173px;
+                padding-right: 9px;
+                padding-left: 21px;
+                
+            }
+        }
+
+    }
+    
+
+    .WrapperButton {
+        @include FlexCenter(center, center, none);
+        margin: 15px 0px;
+
+        button {
+            margin: 30px 4px;
+            color: $whiteColor;
+            background-color: transparent;
+            border: 2px solid $whiteColor;
+            width: auto;
+            margin: 0;
+        
+            font-size: 15px;
+            line-height: 1.47em;
+            font-weight: 700;
+            text-transform: uppercase;
+        
+            border-radius: 0;
+            -webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+            -moz-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+            transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+            padding: 12px 44px 13px;
+            cursor: pointer;
+            &:hover {
+                background-color: $BlackColor;
+                color: white;
+                border: 2px solid $BlackColor
+            }
+        }
+    }
+}

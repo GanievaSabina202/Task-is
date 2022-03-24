@@ -1,0 +1,73 @@
+#footer {
+    background-color: $BlackColor;
+    font-family: $firstFamily;
+    .Footericon {
+        display: flex;
+        justify-content: center;
+        padding: 63px 0px;
+    }
+
+    .FooterList {
+        ul {
+            display: flex;
+            justify-content: center;
+            li {
+                margin-right: 30px;
+                @media (max-width: 768px) {
+                    margin-right: 12px;
+                }
+                a {
+                    text-decoration: none;
+                    color: $whiteColor;
+                    font-size: 20px;
+                    font-weight: 600;
+                    position: relative;
+
+                    &::before {
+                        @include NavbarBefore;
+                    }
+                    &:hover::before {
+                        width: 100%;
+                    }
+                }
+                .active {
+                    &::before {
+                        @include ActiveNavBefore;
+                    }
+                }
+            }
+        }
+    }
+    .ContactFooter {
+        display: flex;
+        justify-content: center;
+        padding: 30px 0px;
+        span {
+            font-size: 20px;
+            color: $whiteColor;
+            font-weight: 600;
+        }
+        a {
+            text-decoration: none;
+            color: $whiteColor;
+            font-size: 17px;
+        }
+    }
+    .FooterSocialIcons {
+        padding: 30px 0px;
+        ul {
+            display: flex;
+            justify-content: center;
+            li {
+                margin-right: 30px;
+                a {
+                    text-decoration: none;
+                    i {
+                        font-size: 30px;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}

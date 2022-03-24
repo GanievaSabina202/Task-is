@@ -1,0 +1,18 @@
+{
+  "name": "task-is",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass --output-style compressed -o assest/css assest/scss"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.1.3",
+    "node-sass": "^7.0.1",
+    "slick-carousel": "^1.8.1"
+  }
+}

@@ -1,0 +1,106 @@
+.Wrapper {
+    background-image     : url('https://kenozoik.qodeinteractive.com/wp-content/uploads/2018/05/Services-title-img.jpg');
+    height               : 650px;
+    background-attachment: fixed;
+    position             : relative;
+    background-size      : cover;
+    background-position  : center;
+    background-repeat    : no-repeat;
+
+    @media (max-width:991.9px) {
+        height               : 450px;
+        background-attachment: unset;
+    }
+
+    @media (max-width:767.9px) {
+        height: 350px;
+    }
+
+    @media (max-width:567.9px) {
+        height: 290px;
+    }
+
+    .Title {
+        position   : absolute;
+        left       : 50%;
+        top        : 50%;
+        transform  : translate(-50%, -50%);
+        font-size  : 65px;
+        line-height: 1em;
+        color      : #ffffff;
+        white-space: nowrap;
+    }
+}
+
+.WhatWeDoCardWrap {
+   .Order{
+        order: 2;
+    }
+    .WhatWeDoWrapper {
+        display        : flex;
+        align-items    : center;
+        justify-content: space-between;
+
+        @media(max-width: 991.9px) {
+            flex-wrap: wrap;
+        }
+
+        .WhatWeDoimg {
+            width : 50%;
+            height: 560px;
+
+            @media(max-width: 991.9px) {
+                width : 100%;
+                height: auto;
+            }
+
+            img {
+                width     : 100%;
+                height    : 100%;
+                object-fit: cover;
+            }
+        }
+
+        .WhatWeDoContent {
+            width  : 50%;
+            padding: 0px 6% 30px 4% !important;
+            color  : #000;
+
+            @media(max-width: 991.9px) {
+                width  : 100%;
+                padding: 50px 10% 50px 17% !important;
+            }
+
+            .WhatWeDoTitle {
+                font-size  : 50px;
+                line-height: 1.06em;
+                font-weight: 600;
+
+                @media(max-width: 767.9px) {
+                    font-size: 45px;
+                }
+            }
+
+            .WhatWeDoHr {
+                height    : 4px;
+                width     : 69px;
+                background: black;
+                margin    : 19px 0px;
+            }
+
+            .WhatWeDoDesc {
+                font-size  : 17px;
+                line-height: 1.52em;
+                font-weight: 400;
+                margin     : 12px 0px 38px;
+            }
+
+            button {
+                width : 100px;
+                margin: 20px 0px;
+
+                @include Button
+            }
+        }
+    }
+}

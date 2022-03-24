@@ -1,0 +1,44 @@
+#SocialCart {
+    padding: 30px 0px;
+    font-family: $firstFamily;
+    .Social {
+        margin: 25px 0px;
+        display: flex;
+        @media (max-width:576px) {
+            padding: 5px 20px;
+            
+        }
+
+        ul {
+            margin-left: 15px;
+            li {
+                p {
+                    font-size: $SocialText;
+                    transition: 0.2s all;
+                    font-weight: bold;
+                    cursor: pointer;
+                    @media (max-width:768px) {
+                        margin: 0;
+                        
+                    }
+                    &:hover {
+                        color: $TextHoverColor;
+                    }
+                }
+                span {
+                    font-size: $TextFont;
+                }
+            }
+        }
+        i {
+            margin-top: 16px;
+            margin-right: 15px;
+            font-size: 39px;
+            transform: translateY(0px);
+            transition: 0.5s linear;
+            &:hover {
+                transform: translateY(-10px);
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+#DesignedWithStyle {
+    font-family: $firstFamily;
+    height: 400px;
+ 
+    button {
+        font-size: 20px;
+        font-weight: 600;
+        &:focus {
+            box-shadow: none;
+            outline: none;
+            background-color: transparent;
+            color: $BlackColor;
+        }
+    }
+    .accordion {
+        padding: 70px 0px;
+    }
+    .DesignRightSide {
+        margin-top: -80px;
+        img {
+            max-width: 100%;
+            object-fit: cover;
+        }
+    }
+}

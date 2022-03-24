@@ -1,0 +1,45 @@
+#FindOut {
+    padding: 30px 0px;
+    font-family: $firstFamily;
+    background-color: $bgColor;
+    .FindLeftSide {
+        h1 {
+            font-size: $h1FontSize;
+            color: $BlackColor;
+            position: relative;
+            line-height: 1em;
+            padding: 60px 0px;
+            @media (max-width:768px) {
+                font-size: 40px;
+                padding: 60px 20px;
+                
+            }
+            &::before {
+                @include BeforeLine;
+            }
+        }
+        p{
+           @include TextParagraph;
+           @media (max-width:576px) {
+               width: 300px;
+               text-align: center;
+               margin: 0 auto;
+               
+           }
+        }
+        button{
+         @include Button;
+         margin: 10px 0px;
+        }
+    }
+    .FindRightSide{
+        margin: 10px 0px;
+        @media (max-width:768px) 
+        {
+         img{
+             max-width: 100%;
+
+         }   
+        }
+    }
+}

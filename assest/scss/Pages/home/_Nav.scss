@@ -1,0 +1,64 @@
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    
+    position: sticky;
+    width: 100%;
+    top: 25px;
+    left: 0;
+    right: 0;
+   
+    background-color: transparent;
+
+    z-index: 777777;
+
+    .navitem {
+        background-color: transparent;
+        ul {
+            @include FlexCenter(center, center, none);
+            li {
+                margin-right: 25px;
+                a {
+                    position: relative;
+                    font-family: $firstFamily;
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: white;
+                    &::before {
+                       @include NavbarBefore;
+                    }
+
+                    &:hover::before {
+                        width: 100%;
+                    }
+                }
+
+                .active {
+                    &::before {
+                       @include ActiveNavBefore;
+                    }
+                }
+            }
+        }
+    }
+}
+.SlickNav {
+   background-color: white;
+   
+    top: 0;
+    left: 0;
+    right: 0;
+    position: sticky;
+    z-index: 66666;
+    padding: 20px 0px;
+    ul {
+        li {
+            a {
+                color: black !important;
+                font-size: 18px;
+            }
+        }
+    }
+}

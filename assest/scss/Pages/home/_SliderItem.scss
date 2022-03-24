@@ -1,0 +1,54 @@
+#SliderItems {
+    font-family: $firstFamily;
+    padding: 30px 0px;
+    background-color: $bgColor;
+    
+    h1 {
+        text-transform: uppercase;
+        padding: 20px 114px;
+        width: 1135px;
+        font-size: 50px;
+        line-height: 1.06em;
+        font-weight: 600;
+        @media (max-width:778px) {
+            font-size: 20px;
+            padding: 20px 50px;
+            width: 550px;
+            
+        }
+        @media (max-width:578px) {
+            font-size: 20px;
+            padding: 20px 50px;
+            width: 450px;
+            
+        }
+    }
+    .your-class {
+        position: relative;
+        padding: 50px 0px;
+        .SlickBodyItem {
+            display: flex;
+            flex-direction: column;
+            margin-left: 125px;
+            span {
+                font-size: 17px;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+
+            
+        }
+        .right {
+            bottom: -18px;
+            position: absolute;
+          
+            left: 182px;
+        }
+        .left {
+            bottom: -18px;
+            position: absolute;
+          
+            left: 142px;
+        }
+    }
+}

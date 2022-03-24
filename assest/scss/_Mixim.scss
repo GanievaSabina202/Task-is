@@ -1,0 +1,114 @@
+@mixin FlexCenter($content, $items, $direction) {
+    display: flex;
+    justify-content: $content;
+    align-items: $items;
+    flex-direction: $direction;
+}
+
+@mixin BeforeLine {
+    content: "";
+    position: absolute;
+    border-color: $BlackColor;
+    border-style: solid;
+    width: 66px;
+    border-bottom-width: 4px;
+    height: 2px;
+    background-color: $BlackColor;
+    bottom: 28px;
+}
+
+@mixin BgFixedImg {
+    background-position: center !important;
+    background-attachment: fixed;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+
+@mixin TextParagraph {
+    margin: 12px 0;
+    line-height: 1.52em;
+    font-weight: 400;
+    font-size: $TextFont;
+}
+
+@mixin Button {
+    margin: 30px 4px;
+    color: $BlackColor;
+    background-color: transparent;
+    border: 2px solid $BlackColor;
+    width: auto;
+    margin: 0;
+
+    font-size: 15px;
+    line-height: 1.47em;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    border-radius: 0;
+    -webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    -moz-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    padding: 12px 44px 13px;
+    cursor: pointer;
+    &:hover {
+        background-color: #000;
+        color: white;
+    }
+}
+
+@mixin GridHover {
+    .Hovertext {
+        transition: .2s all;
+        transform: translateX(-800px);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        .HoverItem{
+            display: flex;
+            flex-direction: column;
+            h1 {
+                font-size: 30px;
+                color: white;
+            }
+            p{
+                font-size: 17px;
+                color: white;
+            }
+        }
+       
+    }
+    &:hover .Hovertext{
+        transform: translateX(0px);
+
+    }
+    
+}
+
+@mixin NavbarBefore {
+    content: "";
+    position: absolute;
+    top: 23px;
+    height: 3px;
+    right: 0px;
+    background-color: white;
+    width: 0;
+    transition: width 0.5s ease;
+    
+}
+
+@mixin ActiveNavBefore {
+    content: '';
+    position: absolute;
+
+    height: 3px;
+    right: 0px;
+    background-color: #ffffff;
+    width: 100%;
+    transition: width .5s ease;
+    top: 23px;
+    
+}

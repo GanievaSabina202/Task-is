@@ -1,0 +1,47 @@
+#Counter {
+    height: 350px;
+  
+    background-position: 50% 170px;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: $firstFamily;
+    overflow-y: hidden;
+
+    .CounterCenterItem {
+        @include FlexCenter(space-between, center, none);
+        padding: 100px 0px;
+       .CounterItemBody{
+           @include FlexCenter(none,center,column);
+        h1 {
+            height: 1em;
+            display: inline-block !important;
+            vertical-align: middle;
+            color: $whiteColor;
+            overflow-y: hidden;
+
+            font-size: 80px;
+            line-height: 1em;
+            font-weight: 600;
+
+            @media (max-width:768px) {
+                display: inline-block;
+                font-size: 43px;
+                
+                
+            }
+         
+        }
+        h6{
+            margin: 6px 0 0;
+            font-size: 20px;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: $whiteColor;
+            @media (max-width:768px) {
+                font-size: 16px;
+                
+            }
+        }
+       }
+    }
+}

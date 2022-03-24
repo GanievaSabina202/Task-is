@@ -1,0 +1,79 @@
+#TeamMember {
+    font-family: $firstFamily;
+    padding: 50px 0px;
+    h1 {
+        font-size: $h1FontSize;
+        font-weight: 600;
+        line-height: 1em;
+        padding: 60px 0px;
+        position: relative;
+        margin: 20px 20px;
+        @media (max-width:768px) {
+            font-size: 43px;
+            
+        }
+
+        &::before {
+            @include BeforeLine;
+        }
+    }
+
+    .col-lg-3 {
+        padding: 0;
+    }
+    .TeamImg {
+        position: relative;
+        transition: 0.3s all;
+
+        img {
+            max-width: 100%;
+            object-fit: cover;
+            z-index: 5555;
+        }
+        .TeamHoverImg {
+            top: 0;
+            left: 0;
+            position: absolute;
+            z-index: -3;
+
+            img {
+                max-width: 100%;
+                object-fit: cover;
+            }
+        }
+        &:hover .TeamHoverImg {
+            opacity: 1;
+            z-index: 8888;
+        }
+
+        .cursor {
+            display: none;
+            position: relative;
+            .cursorItem {
+                position: absolute;
+                top: -50px;
+                left: 300px;
+                width: 300px;
+                height: 90px;
+                background-color: $whiteColor;
+                z-index: 10000;
+                pointer-events: none;
+                transform: translate(-50%, -50%);
+                p {
+                    font-size: 20px;
+                    @media (max-width:768px) 
+                    {font-size: 17px;
+                        
+                    }
+                }
+                h6 {
+                    font-size: 35px;
+                    @media (max-width:768px) 
+                    {font-size: 27px;
+                        
+                    }
+                }
+            }
+        }
+    }
+}

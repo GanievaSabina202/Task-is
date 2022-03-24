@@ -1,0 +1,47 @@
+#SuperBrands{
+    font-family: $firstFamily;
+    h1{
+        font-size: 50px;
+        font-weight: bold;
+        line-height: 1em;
+        padding: 60px 0px;
+        position: relative;
+        letter-spacing: -1,2px;
+        @media (max-width:768px) {
+            font-size: 43px;
+            padding: 60px 15px;
+            
+        }
+        &::before {
+            @include BeforeLine;
+        }
+    }
+    p{
+        
+            @include TextParagraph;
+            @media (max-width:576px) {
+                width: 330px;
+                text-align: start;
+                margin: 0 auto;
+                
+            }
+        
+    }
+    button{
+          
+        width: 100px;
+        margin: 20px 0px;
+     
+        @include Button;
+        @media (max-width:576px) {
+            margin-left: 31px;
+            
+        }
+    }
+    .SuperBrandRightSide{
+        img{
+            max-width: 100%;
+            object-fit: cover;
+        }
+    }
+}

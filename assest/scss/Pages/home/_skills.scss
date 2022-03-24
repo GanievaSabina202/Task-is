@@ -1,0 +1,113 @@
+#Skills {
+  font-family: $firstFamily;
+  .conainer {
+    width: 1200px;
+    @media (max-width: 768px) {
+      width: auto;
+    }
+
+    margin: 100px auto;
+    h1 {
+      font-size: 20px;
+      line-height: 1.15em;
+      font-weight: 700;
+      text-align: center;
+
+      font-weight: 700;
+      margin-left: -36px;
+      padding: 15px 0px;
+      @media (max-width: 768px) {
+        display: inline-block;
+        margin-left: 35px;
+        text-align: center;
+      }
+    }
+    p {
+      font-size: 17px;
+      line-height: 1.52em;
+      font-weight: 400;
+      padding: 0px 40px;
+    }
+  }
+  .circle_percent {
+    font-size: 200px;
+    width: 1em;
+    height: 1em;
+    position: relative;
+    background: #eee;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+    margin: 20px;
+    @media (max-width: 768px) {
+      font-size: 150px;
+    }
+    .circle_inner {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 1em;
+      height: 1em;
+      clip: rect(0 1em 1em 0.5em);
+      .round_per {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 1em;
+        height: 1em;
+        background: $BlackColor;
+        clip: rect(0 1em 1em 0.5em);
+        transform: rotate(180deg);
+        transition: 1.05s;
+      }
+    }
+  }
+
+  .percent_more .circle_inner {
+    clip: rect(0 0.5em 1em 0em);
+  }
+  .percent_more:after {
+    position: absolute;
+    left: 0.5em;
+    top: 0em;
+    right: 0;
+    bottom: 0;
+    background: $BlackColor;
+    content: "";
+  }
+  .circle_inbox {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    right: 3px;
+    bottom: 3px;
+    background: #fff;
+    z-index: 3;
+    border-radius: 50%;
+  }
+  .percent_text {
+    position: absolute;
+    font-size: 36px;
+    font-weight: 600;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+  }
+
+  .SkillsHead {
+    @media (max-width: 699px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .PerCentItem{
+      @media (max-width:600px) {
+        text-align: center;
+        
+      }
+
+    }
+  }
+}

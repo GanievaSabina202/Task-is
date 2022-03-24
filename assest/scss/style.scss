@@ -1,0 +1,56 @@
+@import "Varaibele";
+@import "Mixim";
+@import "Pages/home/Nav";
+@import "Pages/home/header";
+@import "Pages/home/SocialCart";
+@import "Pages/home/AmazingApp";
+@import "Pages/home/MainFrame";
+@import "Pages/home/FindOut";
+@import "Pages/home/BlogPost";
+@import "Pages/home/OurSteller";
+@import "Pages/home/Counter";
+@import "Pages/home/DesignedWithStyle";
+@import 'Pages/home/TeamMember';
+@import "Pages/home/SuperBrands";
+@import "Pages/home/CreativeTeam";
+@import "Pages/home/Pattern";
+@import "Pages/home/Clients";
+@import "Pages/home/SliderItem";
+@import "Pages/home/footer";
+@import "Pages/home/GridImages";
+@import "Pages/home/skills";
+
+// ABOUT SCSS
+@import "Pages/about/about";
+
+
+// WhatWeDo SCSS
+@import "Pages/whatwedo/whatwedo";
+
+
+// Blog SCSS
+@import "Pages/blog/blog";
+
+#back-to-top {
+    background-color: #171717;
+    bottom          : 20px;
+    color           : #fff;
+    display         : none;
+    font-size       : 15px;
+    height          : 20px;
+    line-height     : 20px;
+    position        : fixed;
+    right           : 20px;
+    text-align      : center;
+    width           : 20px;
+    cursor          : pointer;
+    z-index         : 99;
+}
+
+main {
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden !important;
+}
