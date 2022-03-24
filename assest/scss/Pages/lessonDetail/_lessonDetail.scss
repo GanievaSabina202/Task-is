@@ -1,0 +1,147 @@
+.SlugWrap {
+    .BreadcrumbWrap {
+        background-color: #f6f6f6;
+        padding         : 40px 0px;
+
+        .WrapBreadCrumb {
+            display        : flex;
+            align-items    : center;
+            justify-content: space-between;
+
+            .ActivePageAdress {
+                width      : 100%;
+                font-size  : 30px;
+                line-height: 1.067em;
+                font-weight: 600;
+                display    : block;
+            }
+
+            .breadcrumb {
+                display        : flex;
+                justify-content: end;
+                .breadcrumb-item {
+                    color      : #000;
+                    font-size  : 17px;
+                    font-weight: 300;
+
+                    a {
+                        color: #000;
+
+                    }
+                }
+            }
+            .navs{
+                padding: 0 !important;
+                margin: 0 !important;
+            }
+        }
+    }
+
+
+    .CarouselWrap {
+        padding: 100px 0 35px 0;
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            font-family     : "Font Awesome 5 Free";
+            background-image: none;
+            display         : flex;
+            align-items     : center;
+            justify-content : center;
+            font-weight     : 900;
+            font-size       : 30px;
+            line-height     : 1;
+            color           : #000;
+        }
+
+        .carousel-control-next-icon:after {
+            content: '\f105';
+        }
+
+        .carousel-control-prev-icon:after {
+            content: '\f104';
+        }
+
+    }
+
+    .ProjectAboutWrap {
+        padding: 100px 0 0 0;
+
+        @media(max-width:991.9px) {
+            padding: 10px 0px;
+        }
+
+        .ProjectContent {
+            h2 {
+                font-size  : 50px;
+                line-height: 1.06em;
+                font-weight: 600;
+
+                @media(max-width:991.9px) {
+                    font-size: 45px;
+                }
+            }
+
+            span {
+                display         : block;
+                margin          : 17px 0;
+                width           : 66px;
+                height          : 4px;
+                background-color: #000;
+            }
+
+            p {
+                font-size     : 17px;
+                line-height   : 1.52em;
+                font-weight   : 400;
+                color         : #000;
+                letter-spacing: 1px;
+            }
+        }
+
+        .ProjectDetail {
+            h4 {
+                text-transform: uppercase;
+                color         : #000;
+                font-size     : 20px;
+                font-weight   : 700;
+                margin        : 0;
+                letter-spacing: 1px;
+            }
+
+            p {
+                a {
+                    font-size  : 17px;
+                    line-height: 1.52em;
+                    font-weight: 400;
+                    color      : #000;
+
+                }
+
+                padding: 0px 0px 20px 0px;
+            }
+
+            button {
+                width : 100px;
+                margin: 20px 0px 0px 0px;
+
+                @include Button
+            }
+
+        }
+
+    }
+
+}
+
+button.carousel__button.fancybox__button--close,
+button.carousel__button.fancybox__button--slideshow,
+button.carousel__button.fancybox__button--zoom,
+.fancybox__toolbar__items.fancybox__toolbar__items--left,
+.fancybox__thumbs,
+button.carousel__button.fancybox__button--thumbs,
+button.carousel__button.is-prev,
+button.carousel__button.is-next,
+button.carousel__button.fancybox__button--fullscreen {
+    display: none;
+}
