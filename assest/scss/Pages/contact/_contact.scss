@@ -1,0 +1,86 @@
+.Contacts {
+    .form {
+        display       : flex;
+        flex-direction: column;
+
+        input {
+            width        : 100%;
+            padding      : 7px 0px;
+            margin       : 20px 0px;
+            border       : none;
+            border-bottom: 3px solid black;
+        }
+
+        button {
+            width: 100px;
+            @include Button
+        }
+    }
+
+    .ContactAboutWrap {
+        padding: 0px 6% 0px 1%;
+        color  : #000;
+
+        @media (max-width:767.9px) {
+            width  : 100%;
+            padding: 70px 70px;
+        }
+
+        @media (max-width:575.9px) {
+            padding: 70px 20px;
+        }
+
+        .ContactTitle {
+            font-size  : 43px;
+            line-height: 1.06em;
+            font-weight: 600;
+        }
+
+        .Hr {
+            height    : 4px;
+            width     : 63px;
+            background: black;
+            margin    : 19px 0px;
+        }
+
+        .Paragraph {
+            font-size     : 15px;
+            line-height   : 1.52em;
+            font-weight   : 400;
+            margin        : 12px 0px 38px;
+            letter-spacing: 0.9px;
+        }
+    }
+
+
+    .WrapperInput {
+        margin          : 120px 0px 0px 0px;
+        padding         : 98px 170px 98px 130px;
+        background-color: #fafafa;
+        color           : black;
+
+        @media (max-width:767.9px) {
+            padding: 20px 0px;
+        }
+
+        .WrapperContact {
+
+            .CountryName {
+                font-size  : 20px;
+                line-height: 1.15em;
+                font-weight: 700;
+                margin     : 20px 0px 17px 0px;
+            }
+
+            .ListWrap {
+                .ListItems {
+                    display        : flex;
+                    align-items    : center;
+                    justify-content: flex-start;
+                    margin         : 16px 0px;
+
+                }
+            }
+        }
+    }
+}

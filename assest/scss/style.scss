@@ -20,26 +20,28 @@
 @import "Pages/home/GridImages";
 @import "Pages/home/skills";
 
-// ABOUT SCSS
-@import "Pages/about/about";
+//  ______ ABOUT SCSS ______ 
+@import "Pages/ourteam/ourteam";
 
-
-// WhatWeDo SCSS
+//  ______ WhatWeDo SCSS ______ 
 @import "Pages/whatwedo/whatwedo";
 
-
-// Blog SCSS
+//  ______ Blog SCSS ______ 
 @import "Pages/blog/blog";
 
-// BlogDatail SCSS
+//  ______ BlogDatail SCSS ______ 
 @import "Pages/blogDetail/blogDetail";
 
 
-// Lesson SCSS
+//  ______ Lesson SCSS ______ 
 @import "Pages/lesson/lesson";
 
-// LessonDetail SCSS
+//  ______ LessonDetail SCSS ______ 
 @import "Pages/lessonDetail/lessonDetail";
+
+
+// ______ Contact SCSS ______ 
+@import "Pages/contact/contact";
 
 
 #back-to-top {
