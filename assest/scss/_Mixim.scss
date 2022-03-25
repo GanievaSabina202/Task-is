@@ -91,7 +91,7 @@
 @mixin NavbarBefore {
     content: "";
     position: absolute;
-    top: 23px;
+    top: 30px;
     height: 3px;
     right: 0px;
     background-color: white;
@@ -109,6 +109,6 @@
     background-color: #ffffff;
     width: 100%;
     transition: width .5s ease;
-    top: 23px;
+    top: 30px;
     
 }

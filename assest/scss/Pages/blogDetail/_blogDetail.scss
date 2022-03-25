@@ -99,8 +99,12 @@
     }
 
     .pagination {
-        .nav {
+        // .nav {
+        //     position: relative !important;
+        // }
+        .paginationNav {
             position: relative !important;
+            padding: 30px 0px;
         }
     }
 
@@ -331,10 +335,7 @@
     }
 }
 
-nav {
-    position: relative !important;
-    padding: 30px 0px;
-}
+
 
 .page-link {
     border: none !important;

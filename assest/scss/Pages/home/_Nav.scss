@@ -3,31 +3,57 @@ html {
 }
 
 nav {
-    
-    position: sticky;
+    position: fixed;
     width: 100%;
     top: 25px;
     left: 0;
     right: 0;
-   
+
     background-color: transparent;
 
     z-index: 777777;
+    #Student{
+        display: flex;
+        justify-content: flex-end;
+        li {
+            margin-right: 25px;
+            a {
+                position: relative;
+                font-family: $firstFamily;
+                font-size: 24px;
+                font-weight: 600;
+                color: white;
+                &::before {
+                    @include NavbarBefore;
+                }
+
+                &:hover::before {
+                    width: 100%;
+                }
+            }
+
+            .active {
+                &::before {
+                    @include ActiveNavBefore;
+                }
+            }
+        }
+    }
 
     .navitem {
         background-color: transparent;
         ul {
-            @include FlexCenter(center, center, none);
+            @include FlexCenter(flex-end, center, none);
             li {
-                margin-right: 25px;
+                margin-right: 45px;
                 a {
                     position: relative;
                     font-family: $firstFamily;
-                    font-size: 16px;
+                    font-size: 24px;
                     font-weight: 600;
                     color: white;
                     &::before {
-                       @include NavbarBefore;
+                        @include NavbarBefore;
                     }
 
                     &:hover::before {
@@ -37,7 +63,7 @@ nav {
 
                 .active {
                     &::before {
-                       @include ActiveNavBefore;
+                        @include ActiveNavBefore;
                     }
                 }
             }
@@ -45,8 +71,8 @@ nav {
     }
 }
 .SlickNav {
-   background-color: white;
-   
+    background-color: white;
+
     top: 0;
     left: 0;
     right: 0;
@@ -62,3 +88,5 @@ nav {
         }
     }
 }
+
+

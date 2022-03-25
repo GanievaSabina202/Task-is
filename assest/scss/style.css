@@ -21,14 +21,62 @@ html {
 }
 
 nav {
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   width: 100%;
   top: 25px;
   left: 0;
   right: 0;
   background-color: transparent;
   z-index: 777777;
+}
+
+nav #Student {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+nav #Student li {
+  margin-right: 25px;
+}
+
+nav #Student li a {
+  position: relative;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+}
+
+nav #Student li a::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  height: 3px;
+  right: 0px;
+  background-color: white;
+  width: 0;
+  -webkit-transition: width 0.5s ease;
+  transition: width 0.5s ease;
+}
+
+nav #Student li a:hover::before {
+  width: 100%;
+}
+
+nav #Student li .active::before {
+  content: '';
+  position: absolute;
+  height: 3px;
+  right: 0px;
+  background-color: #ffffff;
+  width: 100%;
+  -webkit-transition: width .5s ease;
+  transition: width .5s ease;
+  top: 30px;
 }
 
 nav .navitem {
@@ -39,9 +87,9 @@ nav .navitem ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -52,13 +100,13 @@ nav .navitem ul {
 }
 
 nav .navitem ul li {
-  margin-right: 25px;
+  margin-right: 45px;
 }
 
 nav .navitem ul li a {
   position: relative;
   font-family: "Barlow Condensed", sans-serif;
-  font-size: 16px;
+  font-size: 24px;
   font-weight: 600;
   color: white;
 }
@@ -66,7 +114,7 @@ nav .navitem ul li a {
 nav .navitem ul li a::before {
   content: "";
   position: absolute;
-  top: 23px;
+  top: 30px;
   height: 3px;
   right: 0px;
   background-color: white;
@@ -88,7 +136,7 @@ nav .navitem ul li .active::before {
   width: 100%;
   -webkit-transition: width .5s ease;
   transition: width .5s ease;
-  top: 23px;
+  top: 30px;
 }
 
 .SlickNav {
@@ -1671,7 +1719,7 @@ header .slick-nav.animate i:after {
 #footer .FooterList ul li a::before {
   content: "";
   position: absolute;
-  top: 23px;
+  top: 30px;
   height: 3px;
   right: 0px;
   background-color: white;
@@ -1693,7 +1741,7 @@ header .slick-nav.animate i:after {
   width: 100%;
   -webkit-transition: width .5s ease;
   transition: width .5s ease;
-  top: 23px;
+  top: 30px;
 }
 
 #footer .ContactFooter {
@@ -2043,10 +2091,6 @@ header .slick-nav.animate i:after {
   -webkit-transition: .2s;
   transition: .2s;
   left: 0;
-}
-
-.MainAbout {
-  padding: 20px 0px;
 }
 
 .Wrapper {
@@ -2571,7 +2615,7 @@ header .slick-nav.animate i:after {
   padding: 0 4px 0 4px;
 }
 
-nav {
+.paginationNav {
   position: relative !important;
   padding: 30px 0px;
 }
@@ -2711,8 +2755,9 @@ nav {
   color: #000;
 }
 
-.RecentCardWrapper .pagination .nav {
+.RecentCardWrapper .pagination .paginationNav {
   position: relative !important;
+  padding: 30px 0px;
 }
 
 .RecentCardWrapper .CategoryWrapper .WrapCategory {
@@ -2993,11 +3038,6 @@ nav {
   padding: 0 4px 0 4px;
 }
 
-nav {
-  position: relative !important;
-  padding: 30px 0px;
-}
-
 .page-link {
   border: none !important;
   color: black !important;
@@ -3257,6 +3297,134 @@ button.carousel__button.is-prev,
 button.carousel__button.is-next,
 button.carousel__button.fancybox__button--fullscreen {
   display: none;
+}
+
+.Contacts {
+  padding-top: 110px !important;
+  padding-bottom: 114px !important;
+}
+
+.Contacts .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.Contacts .form input {
+  width: 100%;
+  padding: 7px 0px;
+  margin: 20px 0px;
+  border: none;
+  border-bottom: 3px solid black;
+}
+
+.Contacts .form button {
+  width: 100px;
+  margin: 30px 4px;
+  color: #000;
+  background-color: transparent;
+  border: 2px solid #000;
+  width: auto;
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.47em;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 0;
+  -webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  padding: 12px 44px 13px;
+  cursor: pointer;
+}
+
+.Contacts .form button:hover {
+  background-color: #000;
+  color: white;
+}
+
+.Contacts .form .textarea {
+  border: 1px solid #ebebeb;
+  background-color: #f6f6f6;
+  font-size: 15px;
+  margin: 15px 0 20px;
+  padding: 16px 23px;
+  height: 100px;
+}
+
+.Contacts .ContactAboutWrap {
+  padding: 0px 6% 0px 1%;
+  color: #000;
+}
+
+@media (max-width: 767.9px) {
+  .Contacts .ContactAboutWrap {
+    width: 100%;
+    padding: 70px 70px;
+  }
+}
+
+@media (max-width: 575.9px) {
+  .Contacts .ContactAboutWrap {
+    padding: 70px 20px;
+  }
+}
+
+.Contacts .ContactAboutWrap .ContactTitle {
+  font-size: 43px;
+  line-height: 1.06em;
+  font-weight: 600;
+}
+
+.Contacts .ContactAboutWrap .Hr {
+  height: 4px;
+  width: 63px;
+  background: black;
+  margin: 19px 0px;
+}
+
+.Contacts .ContactAboutWrap .Paragraph {
+  font-size: 15px;
+  line-height: 1.52em;
+  font-weight: 400;
+  margin: 12px 0px 38px;
+  letter-spacing: 0.9px;
+}
+
+.Contacts .WrapperInput {
+  margin: 120px 0px 0px 0px;
+  padding: 98px 170px 98px 130px;
+  background-color: #fafafa;
+  color: black;
+}
+
+@media (max-width: 767.9px) {
+  .Contacts .WrapperInput {
+    padding: 20px 0px;
+  }
+}
+
+.Contacts .WrapperInput .WrapperContact .CountryName {
+  font-size: 20px;
+  line-height: 1.15em;
+  font-weight: 700;
+  margin: 20px 0px 17px 0px;
+}
+
+.Contacts .WrapperInput .WrapperContact .ListWrap .ListItems {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 16px 0px;
 }
 
 #back-to-top {
