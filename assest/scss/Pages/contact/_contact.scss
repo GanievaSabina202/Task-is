@@ -1,4 +1,8 @@
 .Contacts {
+
+    padding-top   : 110px !important;
+    padding-bottom: 114px !important;
+
     .form {
         display       : flex;
         flex-direction: column;
@@ -14,6 +18,15 @@
         button {
             width: 100px;
             @include Button
+        }
+
+        .textarea {
+            border          : 1px solid #ebebeb;
+            background-color: #f6f6f6;
+            font-size       : 15px;
+            margin          : 15px 0 20px;
+            padding         : 16px 23px;
+            height          : 100px;
         }
     }
 
