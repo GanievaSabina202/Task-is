@@ -1,5 +1,19 @@
 
+//Sticky Navbar addd
+const nav = document.querySelector('#nav');
+let navTop = nav.offsetTop;
 
+
+function fixedNav() {
+    if (window.scrollY >= 250) {
+        nav.classList.add('SlickNav');
+    
+    } else {
+        nav.classList.remove('SlickNav');
+    }
+}
+
+window.addEventListener('scroll', fixedNav);
 
 
 //Back to Top
@@ -237,18 +251,3 @@ $('.slick-nav').on('click touch', function (e) {
 });
 
 
-//Sticky Navbar addd
-const nav = document.querySelector('#nav');
-let navTop = nav.offsetTop;
-
-
-function fixedNav() {
-    if (window.scrollY >= 250) {
-        nav.classList.add('SlickNav');
-    
-    } else {
-        nav.classList.remove('SlickNav');
-    }
-}
-
-window.addEventListener('scroll', fixedNav);

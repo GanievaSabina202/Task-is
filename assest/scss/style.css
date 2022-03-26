@@ -3427,6 +3427,13 @@ button.carousel__button.fancybox__button--fullscreen {
   margin: 16px 0px;
 }
 
+#mapContact {
+  -webkit-filter: grayscale(22);
+          filter: grayscale(22);
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
 #back-to-top {
   background-color: #171717;
   bottom: 20px;
