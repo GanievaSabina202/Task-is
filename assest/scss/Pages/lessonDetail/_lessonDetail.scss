@@ -19,6 +19,8 @@
             .breadcrumb {
                 display        : flex;
                 justify-content: end;
+                width          : 100% !important;
+
                 .breadcrumb-item {
                     color      : #000;
                     font-size  : 17px;
@@ -30,9 +32,10 @@
                     }
                 }
             }
-            .navs{
+
+            .navs {
                 padding: 0 !important;
-                margin: 0 !important;
+                margin : 0 !important;
             }
         }
     }
