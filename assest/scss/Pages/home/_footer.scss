@@ -11,6 +11,11 @@
         ul {
             display: flex;
             justify-content: center;
+            @media (max-width:567.9px) {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
             li {
                 margin-right: 30px;
                 @media (max-width: 768px) {
