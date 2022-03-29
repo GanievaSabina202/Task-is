@@ -1,28 +1,33 @@
+@import url("https://use.fontawesome.com/releases/v5.13.0/css/all.css");
+
 html {
     scroll-behavior: smooth;
 }
 
-nav {
-    position: fixed;
-    width: 100%;
-    top: 25px;
-    left: 0;
-    right: 0;
-
+// nav SECTION START
+#nav {
+    position        : fixed;
+    width           : 100%;
+    top             : 25px;
+    left            : 0;
+    right           : 0;
     background-color: transparent;
+    z-index         : 777777;
 
-    z-index: 777777;
-    #Student{
-        display: flex;
+    #Student {
+        display        : flex;
         justify-content: flex-end;
+
         li {
             margin-right: 25px;
+
             a {
-                position: relative;
+                position   : relative;
                 font-family: $firstFamily;
-                font-size: 24px;
+                font-size  : 24px;
                 font-weight: 600;
-                color: white;
+                color      : white;
+
                 &::before {
                     @include NavbarBefore;
                 }
@@ -42,16 +47,20 @@ nav {
 
     .navitem {
         background-color: transparent;
+
         ul {
             @include FlexCenter(flex-end, center, none);
+
             li {
                 margin-right: 45px;
+
                 a {
-                    position: relative;
+                    position   : relative;
                     font-family: $firstFamily;
-                    font-size: 24px;
+                    font-size  : 24px;
                     font-weight: 600;
-                    color: white;
+                    color      : white;
+
                     &::before {
                         @include NavbarBefore;
                     }
@@ -69,24 +78,149 @@ nav {
             }
         }
     }
+
+    @media (max-width:991.9px) {
+        display: none;
+    }
 }
+
+// nav2 SECTION START
+#nav2 {
+    @media (min-width:991.9px) {
+        display: none;
+    }
+
+    .nav-item {
+        border-bottom: 1px solid #e1e1e1;
+
+        &:last-child {
+            border: none;
+        }
+
+        .nav-link {
+            display        : flex;
+            align-items    : center;
+            justify-content: space-between;
+            font-size: 16px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .dropdownMenu {
+            border          : none;
+            background-color: rgba(255, 255, 255, 0);
+
+            .dropdown-item {
+                border-bottom: 1px solid #e1e1e1 !important;
+
+                &:last-child {
+                    border: none;
+                }
+            }
+
+        }
+    }
+
+    .OpenBtnIcons {
+        position: relative;
+        display : block;
+        width   : 23px;
+        height  : 17px;
+
+        &:hover>.BtnIcon {
+            left  : 0px !important;
+            top   : 0px !important;
+            width : 17px;
+            height: 17px;
+        }
+
+        .BtnIcon {
+            position           : absolute;
+            left               : 0;
+            background-color   : currentColor;
+            transition         : .2s;
+            backface-visibility: hidden;
+            content            : '';
+            height             : 5px;
+            width              : 5px;
+            top                : -3px;
+
+            &:nth-child(3n+2) {
+                left: 9px;
+            }
+
+            &:nth-child(3n+3) {
+                left: 18px;
+            }
+
+            &:nth-child(3n+4) {
+                left: 9px;
+                top : 6px;
+            }
+
+            &:nth-child(3n+5) {
+                left: 0px;
+                top : 6px;
+            }
+
+            &:nth-child(3n+6) {
+                left: 18px;
+                top : 6px;
+            }
+
+            &:nth-child(3n+7) {
+                left: 9px;
+                top : 15px;
+            }
+
+            &:nth-child(3n+8) {
+                left: 0px;
+                top : 15px;
+            }
+
+            &:nth-child(3n+9) {
+                left: 18px;
+                top : 15px;
+            }
+        }
+    }
+    .navbar-toggler{
+        padding: 0 !important;
+    }
+}
+
+.navbar-light .navbar-toggler{
+    border: none !important;
+}
+button:focus:not(:focus-visible){
+    outline:none !important;
+    box-shadow:none !important;
+}
+
+
+
+
+
+
+
+
+
 .SlickNav {
     background-color: white;
 
-    top: 0;
-    left: 0;
-    right: 0;
+    top     : 0;
+    left    : 0;
+    right   : 0;
     position: sticky;
-    z-index: 66666;
-    padding: 20px 0px;
+    z-index : 66666;
+    padding : 20px 0px;
+
     ul {
         li {
             a {
-                color: black !important;
+                color    : black !important;
                 font-size: 18px;
             }
         }
     }
 }
-
-
