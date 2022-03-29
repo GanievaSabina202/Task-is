@@ -74,17 +74,30 @@
         background-color: #fafafa;
         color           : black;
 
+        .col-lg-3{
+            @media (max-width:576px) {
+                padding: 0 !important;
+                
+            }
+        }
+
         @media (max-width:767.9px) {
             padding: 20px 0px;
+            text-align: center;
         }
 
         .WrapperContact {
-
+            @media (max-width:767.9px) {
+                text-align: center;
+                display: inline-block;
+            }
+    
             .CountryName {
+                display: inline-block;
                 font-size  : 20px;
                 line-height: 1.15em;
                 font-weight: 700;
-                margin     : 20px 0px 17px 0px;
+                margin     : 20px 0px 15px 0px;
             }
 
             .ListWrap {
@@ -93,6 +106,10 @@
                     align-items    : center;
                     justify-content: flex-start;
                     margin         : 16px 0px;
+
+                    @media (max-width:767.9px) {
+                    justify-content: center;
+                    }
 
                 }
             }
@@ -103,4 +120,7 @@
 #mapContact{
     filter: grayscale(22);
     filter: invert(1);
+}
+#mapDiv{
+    width: 100%;
 }
