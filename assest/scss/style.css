@@ -1,3 +1,4 @@
+@import url("https://use.fontawesome.com/releases/v5.13.0/css/all.css");
 *, *::before, *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -20,17 +21,17 @@ html {
   scroll-behavior: smooth;
 }
 
-nav {
+#nav {
   position: fixed;
   width: 100%;
-  top: 25px;
+  top: 0;
   left: 0;
   right: 0;
   background-color: transparent;
   z-index: 777777;
 }
 
-nav #Student {
+#nav #Student {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -39,11 +40,11 @@ nav #Student {
           justify-content: flex-end;
 }
 
-nav #Student li {
+#nav #Student li {
   margin-right: 25px;
 }
 
-nav #Student li a {
+#nav #Student li a {
   position: relative;
   font-family: "Barlow Condensed", sans-serif;
   font-size: 24px;
@@ -51,7 +52,7 @@ nav #Student li a {
   color: white;
 }
 
-nav #Student li a::before {
+#nav #Student li a::before {
   content: "";
   position: absolute;
   top: 30px;
@@ -63,11 +64,11 @@ nav #Student li a::before {
   transition: width 0.5s ease;
 }
 
-nav #Student li a:hover::before {
+#nav #Student li a:hover::before {
   width: 100%;
 }
 
-nav #Student li .active::before {
+#nav #Student li .active::before {
   content: '';
   position: absolute;
   height: 3px;
@@ -79,11 +80,11 @@ nav #Student li .active::before {
   top: 30px;
 }
 
-nav .navitem {
+#nav .navitem {
   background-color: transparent;
 }
 
-nav .navitem ul {
+#nav .navitem ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -99,11 +100,11 @@ nav .navitem ul {
           flex-direction: none;
 }
 
-nav .navitem ul li {
+#nav .navitem ul li {
   margin-right: 45px;
 }
 
-nav .navitem ul li a {
+#nav .navitem ul li a {
   position: relative;
   font-family: "Barlow Condensed", sans-serif;
   font-size: 24px;
@@ -111,7 +112,7 @@ nav .navitem ul li a {
   color: white;
 }
 
-nav .navitem ul li a::before {
+#nav .navitem ul li a::before {
   content: "";
   position: absolute;
   top: 30px;
@@ -123,11 +124,11 @@ nav .navitem ul li a::before {
   transition: width 0.5s ease;
 }
 
-nav .navitem ul li a:hover::before {
+#nav .navitem ul li a:hover::before {
   width: 100%;
 }
 
-nav .navitem ul li .active::before {
+#nav .navitem ul li .active::before {
   content: '';
   position: absolute;
   height: 3px;
@@ -139,8 +140,136 @@ nav .navitem ul li .active::before {
   top: 30px;
 }
 
+@media (max-width: 991.9px) {
+  #nav {
+    display: none;
+  }
+}
+
+@media (min-width: 991.9px) {
+  #nav2 {
+    display: none;
+  }
+}
+
+#nav2 .nav-item {
+  border-bottom: 1px solid #e1e1e1;
+}
+
+#nav2 .nav-item:last-child {
+  border: none;
+}
+
+#nav2 .nav-item .nav-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+#nav2 .nav-item .dropdownMenu {
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+#nav2 .nav-item .dropdownMenu .dropdown-item {
+  border-bottom: 1px solid #e1e1e1 !important;
+}
+
+#nav2 .nav-item .dropdownMenu .dropdown-item:last-child {
+  border: none;
+}
+
+#nav2 .OpenBtnIcons {
+  position: relative;
+  display: block;
+  width: 23px;
+  height: 17px;
+}
+
+#nav2 .OpenBtnIcons:hover > .BtnIcon {
+  left: 0px !important;
+  top: 0px !important;
+  width: 17px;
+  height: 17px;
+}
+
+#nav2 .OpenBtnIcons .BtnIcon {
+  position: absolute;
+  left: 0;
+  background-color: currentColor;
+  -webkit-transition: .2s;
+  transition: .2s;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  content: '';
+  height: 5px;
+  width: 5px;
+  top: -3px;
+}
+
+#nav2 .OpenBtnIcons .BtnIcon:nth-child(3n+2) {
+  left: 9px;
+}
+
+#nav2 .OpenBtnIcons .BtnIcon:nth-child(3n+3) {
+  left: 18px;
+}
+
+#nav2 .OpenBtnIcons .BtnIcon:nth-child(3n+4) {
+  left: 9px;
+  top: 6px;
+}
+
+#nav2 .OpenBtnIcons .BtnIcon:nth-child(3n+5) {
+  left: 0px;
+  top: 6px;
+}
+
+#nav2 .OpenBtnIcons .BtnIcon:nth-child(3n+6) {
+  left: 18px;
+  top: 6px;
+}
+
+#nav2 .OpenBtnIcons .BtnIcon:nth-child(3n+7) {
+  left: 9px;
+  top: 15px;
+}
+
+#nav2 .OpenBtnIcons .BtnIcon:nth-child(3n+8) {
+  left: 0px;
+  top: 15px;
+}
+
+#nav2 .OpenBtnIcons .BtnIcon:nth-child(3n+9) {
+  left: 18px;
+  top: 15px;
+}
+
+#nav2 .navbar-toggler {
+  padding: 0 !important;
+}
+
+.navbar-light .navbar-toggler {
+  border: none !important;
+}
+
+button:focus:not(:focus-visible) {
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
 .SlickNav {
-  background-color: white;
+  background-color: white !important;
   top: 0;
   left: 0;
   right: 0;
@@ -1698,6 +1827,21 @@ header .slick-nav.animate i:after {
           justify-content: center;
 }
 
+@media (max-width: 567.9px) {
+  #footer .FooterList ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 #footer .FooterList ul li {
   margin-right: 30px;
 }
@@ -1711,7 +1855,7 @@ header .slick-nav.animate i:after {
 #footer .FooterList ul li a {
   text-decoration: none;
   color: #f0f0f0;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
   position: relative;
 }
@@ -2029,10 +2173,22 @@ header .slick-nav.animate i:after {
   padding-bottom: 115px !important;
 }
 
+@media (max-width: 767.9px) {
+  #Main .TeamAboutWrap {
+    width: 100%;
+  }
+}
+
 #Main .TeamAboutWrap .AboutTitle {
   font-size: 65px;
   line-height: 1.06em;
   font-weight: 600;
+}
+
+@media (max-width: 575.9px) {
+  #Main .TeamAboutWrap .AboutTitle {
+    font-size: 50px !important;
+  }
 }
 
 #Main .TeamAboutWrap .Hr {
@@ -2064,7 +2220,7 @@ header .slick-nav.animate i:after {
       flex-wrap: wrap;
 }
 
-#Main .imgWrap {
+#Main .AllWrapper .imgWrap {
   width: 25%;
   height: auto;
   position: relative;
@@ -2072,11 +2228,23 @@ header .slick-nav.animate i:after {
   transition: .2s;
 }
 
-#Main .imgWrap:hover Img {
+#Main .AllWrapper .imgWrap:hover Img {
   z-index: 0;
 }
 
-#Main .img {
+@media (max-width: 991.9px) {
+  #Main .AllWrapper .imgWrap {
+    width: 50% !important;
+  }
+}
+
+@media (max-width: 575.9px) {
+  #Main .AllWrapper .imgWrap {
+    width: 100% !important;
+  }
+}
+
+#Main .AllWrapper .imgWrap .img {
   width: 100%;
   z-index: 3;
   -webkit-transition: .2s;
@@ -2084,7 +2252,7 @@ header .slick-nav.animate i:after {
   position: relative;
 }
 
-#Main .img1 {
+#Main .AllWrapper .imgWrap .img1 {
   width: 100%;
   position: absolute;
   top: 0.21;
@@ -2188,6 +2356,13 @@ header .slick-nav.animate i:after {
   .WhatWeDoCardWrap .WhatWeDoWrapper .WhatWeDoContent {
     width: 100%;
     padding: 50px 10% 50px 17% !important;
+  }
+}
+
+@media (max-width: 991.9px) {
+  .WhatWeDoCardWrap .WhatWeDoWrapper .WhatWeDoContent {
+    width: 100%;
+    padding: 20px 10px !important;
   }
 }
 
@@ -2968,6 +3143,12 @@ header .slick-nav.animate i:after {
   padding: 5px 50px;
 }
 
+@media (max-width: 575.9px) {
+  .BlogWrapperItem .textWrap .textParagraph {
+    padding: 5px 0px 0px 54px !important;
+  }
+}
+
 .BlogWrapperItem .InfoWrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3156,6 +3337,7 @@ header .slick-nav.animate i:after {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
+  width: 100% !important;
 }
 
 .SlugWrap .BreadcrumbWrap .WrapBreadCrumb .breadcrumb .breadcrumb-item {
@@ -3401,17 +3583,32 @@ button.carousel__button.fancybox__button--fullscreen {
   color: black;
 }
 
+@media (max-width: 576px) {
+  .Contacts .WrapperInput .col-lg-3 {
+    padding: 0 !important;
+  }
+}
+
 @media (max-width: 767.9px) {
   .Contacts .WrapperInput {
     padding: 20px 0px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 767.9px) {
+  .Contacts .WrapperInput .WrapperContact {
+    text-align: center;
+    display: inline-block;
   }
 }
 
 .Contacts .WrapperInput .WrapperContact .CountryName {
+  display: inline-block;
   font-size: 20px;
   line-height: 1.15em;
   font-weight: 700;
-  margin: 20px 0px 17px 0px;
+  margin: 20px 0px 15px 0px;
 }
 
 .Contacts .WrapperInput .WrapperContact .ListWrap .ListItems {
@@ -3427,11 +3624,23 @@ button.carousel__button.fancybox__button--fullscreen {
   margin: 16px 0px;
 }
 
+@media (max-width: 767.9px) {
+  .Contacts .WrapperInput .WrapperContact .ListWrap .ListItems {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 #mapContact {
   -webkit-filter: grayscale(22);
           filter: grayscale(22);
   -webkit-filter: invert(1);
           filter: invert(1);
+}
+
+#mapDiv {
+  width: 100%;
 }
 
 #back-to-top {

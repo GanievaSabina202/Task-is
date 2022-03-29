@@ -8,7 +8,7 @@ html {
 #nav {
     position        : fixed;
     width           : 100%;
-    top             : 25px;
+    top             : 0;
     left            : 0;
     right           : 0;
     background-color: transparent;
@@ -206,7 +206,7 @@ button:focus:not(:focus-visible){
 
 
 .SlickNav {
-    background-color: white;
+    background-color: white !important;
 
     top     : 0;
     left    : 0;
