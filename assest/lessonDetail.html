@@ -17,8 +17,8 @@
     <!-- Bootstrap 5 End-->
 
     <!-- Style Css Start-->
-  
-    <link rel="stylesheet" href="scss/style.css">
+
+    <link rel="stylesheet" href="css/style.css">
     <!-- Style Css End-->
 
 </head>
@@ -27,28 +27,45 @@
 
     <nav id="nav">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-8">
+            <div class="row d-flex align-items-center justify-content-center">
+                <div class="col-lg-11">
                     <div class="navitem">
                         <ul>
-                            <li><a class="active" href="#">Home</a></li>
-                            <li><a href="ourteam.html">About</a></li>
-                            <li><a href="contact.html">Conatct</a></li>
+                            <li><a class="active" href="#">Ana səhifə</a></li>
+                            <li><a href="whatwedo.html">Haqqımızda</a></li>
+                            <li><a href="lesson.html">Dərslərimiz</a></li>
+                            <li><a href="ourteam.html">Komandamiz</a></li>
                             <li><a href="blog.html">Blogs</a></li>
-                            <li><a href="lesson.html">Portfolio</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="#">Sertikifatı yoxla</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <ul id="Student">
-                        <li><a href="#">Seftikatı Yoxla</a></li>
-                        <li><a href=""><i class="fa-solid fa-arrow-right-to-bracket"></i></a></li>
-                    </ul>
+
+                <div class="col-lg-1">
+                    <a href="index.html" class="navbar-toggler p-3" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="OpenBtnIcons">
+                            <span class="BtnIcon"></span>
+                            <span class="BtnIcon"></span>
+                            <span class="BtnIcon"></span>
+
+                            <span class="BtnIcon"></span>
+                            <span class="BtnIcon"></span>
+                            <span class="BtnIcon"></span>
+
+                            <span class="BtnIcon"></span>
+                            <span class="BtnIcon"></span>
+                            <span class="BtnIcon"></span>
+                        </span>
+                    </a>
                 </div>
             </div>
         </div>
     </nav>
-    
+
+
     <nav id="nav2" class="navbar navbar-expand-lg navbar-light p-3">
         <div class="container">
             <button class="navbar-toggler p-3" type="button" data-bs-toggle="collapse"
@@ -81,14 +98,14 @@
                         <a class="nav-link" href="lesson.html">Lessons</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="lessonDetail.html" id="navbarDropdownMenuLink" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                          Lesson Detail
+                        <a class="nav-link dropdown-toggle" href="lessonDetail.html" id="navbarDropdownMenuLink"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Lesson Detail
                         </a>
                         <ul class="dropdown-menu dropdownMenu" aria-labelledby="navbarDropdownMenuLink">
                             <li><a class="dropdown-item" href="contact.html">Əlaqə</a></li>
                             <li><a class="dropdown-item" href="whatwedo.html">Biz nə Edirik</a></li>
-                          
+
                         </ul>
                     </li>
                 </ul>
@@ -96,19 +113,22 @@
         </div>
     </nav>
     <section class="SlugWrap">
+
         <div class="BreadcrumbWrap">
             <div class="container">
-            <div class="WrapBreadCrumb">
+                <div class="WrapBreadCrumb">
                     <span class="ActivePageAdress">ART MAGAZINE</span>
-                        <ol class="breadcrumb m-0 ">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item" aria-current="page">Slug</li>
-                        </ol>
+                    <ol class="breadcrumb m-0 ">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item" aria-current="page">Slug</li>
+                    </ol>
                 </div>
             </div>
         </div>
+
         <div class="container">
             <div class="row">
+
                 <div class="col-lg-8 col-md-12 ">
                     <div class="CarouselWrap">
                         <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
@@ -169,8 +189,30 @@
                         </div>
 
                         <div class="ProjectDetail">
+                            <h4>DATE:</h4>
+                            <p>
+                                <a href="#">June 6, 2018</a>
+                            </p>
+                        </div>
+
+                        <div class="ProjectDetail">
                             <button>Download</button>
                         </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-12">
+                    <div class="InputWrapper">
+                        <h3 class="text-center">Müraciət et</h3>
+                        <form class="form" action="">
+                            <input type="text" placeholder="Adınız">
+                            <input type="text" placeholder="Soyadınız">
+                            <input type="email" placeholder="Mail">
+                            <textarea class="textarea" placeholder="Mesajınız"></textarea>
+                            <button type="submit">
+                                Müraciət et
+                            </button>
+                        </form>
                     </div>
                 </div>
             </div>

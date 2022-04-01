@@ -342,3 +342,73 @@
     text-transform: uppercase;
     margin        : 0 0 25px
 }
+
+.OpenBtnIcons {
+    position: relative;
+    display : block;
+    width   : 23px;
+    height  : 17px;
+
+    &:hover>.BtnIcon {
+        left  : 0px !important;
+        top   : 0px !important;
+        width : 17px;
+        height: 17px;
+    }
+
+    .BtnIcon {
+        position           : absolute;
+        left               : 0;
+        background-color   : currentColor;
+        transition         : .2s;
+        backface-visibility: hidden;
+        content            : '';
+        height             : 5px;
+        width              : 5px;
+        top                : -3px;
+        color              : white !important;
+
+        &:nth-child(3n+2) {
+            left: 9px;
+        }
+
+        &:nth-child(3n+3) {
+            left: 18px;
+        }
+
+        &:nth-child(3n+4) {
+            left: 9px;
+            top : 6px;
+        }
+
+        &:nth-child(3n+5) {
+            left: 0px;
+            top : 6px;
+        }
+
+        &:nth-child(3n+6) {
+            left: 18px;
+            top : 6px;
+        }
+
+        &:nth-child(3n+7) {
+            left: 9px;
+            top : 15px;
+        }
+
+        &:nth-child(3n+8) {
+            left: 0px;
+            top : 15px;
+        }
+
+        &:nth-child(3n+9) {
+            left: 18px;
+            top : 15px;
+        }
+    }
+}
+
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
+

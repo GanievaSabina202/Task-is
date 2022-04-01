@@ -251,3 +251,6 @@ $('.slick-nav').on('click touch', function (e) {
 });
 
 
+(function($){
+    new WOW().init();
+})(jQuery);

@@ -121,7 +121,8 @@
 
                 }
 
-                padding: 0px 0px 20px 0px;
+                padding: 0px !important;
+                margin: 4px !important;
             }
 
             button {
@@ -135,8 +136,46 @@
 
     }
 
+
+
 }
 
+.InputWrapper {
+    margin: 20px 0 50px 0;
+
+    .form {
+        display       : flex;
+        flex-direction: column;
+
+        &:focus-visible {
+            outline: none !important;
+        }
+
+        input {
+            width        : 100%;
+            padding      : 7px 0px;
+            margin       : 20px 0px;
+            border       : none;
+            border-bottom: 3px solid black;
+        }
+
+        .textarea {
+            border          : 1px solid #ebebeb;
+            background-color: #f6f6f6;
+            font-size       : 15px;
+            margin          : 15px 0 20px;
+            padding         : 16px 23px;
+            height          : 100px;
+            resize          : none;
+        }
+
+        button {
+            width : 100px;
+            margin: 20px 0px 0px 0px;
+            @include Button
+        }
+    }
+}
 button.carousel__button.fancybox__button--close,
 button.carousel__button.fancybox__button--slideshow,
 button.carousel__button.fancybox__button--zoom,

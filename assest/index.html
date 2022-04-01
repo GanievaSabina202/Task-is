@@ -37,7 +37,7 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- Bootstrap 5 End-->
 
-    <link rel="stylesheet" href="scss/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <script defer src="js/main.js"></script>
 
     <title> kenozoik.qodeinteractive.com</title>
@@ -48,23 +48,39 @@
 
     <nav id="nav">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-8">
+            <div class="row d-flex align-items-center justify-content-center">
+                <div class="col-lg-11">
                     <div class="navitem">
                         <ul>
-                            <li><a class="active" href="#">Home</a></li>
-                            <li><a href="ourteam.html">About</a></li>
-                            <li><a href="contact.html">Conatct</a></li>
+                            <li><a class="active" href="#">Ana səhifə</a></li>
+                            <li><a href="whatwedo.html">Haqqımızda</a></li>
+                            <li><a href="lesson.html">Dərslərimiz</a></li>
+                            <li><a href="ourteam.html">Komandamiz</a></li>
                             <li><a href="blog.html">Blogs</a></li>
-                            <li><a href="lesson.html">Portfolio</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="#">Sertikifatı yoxla</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <ul id="Student">
-                        <li><a href="#">Seftikatı Yoxla</a></li>
-                        <li><a href=""><i class="fa-solid fa-arrow-right-to-bracket"></i></a></li>
-                    </ul>
+
+                <div class="col-lg-1">
+                    <a href="index.html" class="navbar-toggler p-3" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="OpenBtnIcons">
+                            <span class="BtnIcon"></span>
+                            <span class="BtnIcon"></span>
+                            <span class="BtnIcon"></span>
+
+                            <span class="BtnIcon"></span>
+                            <span class="BtnIcon"></span>
+                            <span class="BtnIcon"></span>
+
+                            <span class="BtnIcon"></span>
+                            <span class="BtnIcon"></span>
+                            <span class="BtnIcon"></span>
+                        </span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -103,14 +119,14 @@
                         <a class="nav-link" href="lesson.html">Lessons</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="lessonDetail.html" id="navbarDropdownMenuLink" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                          Lesson Detail
+                        <a class="nav-link dropdown-toggle" href="lessonDetail.html" id="navbarDropdownMenuLink"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Lesson Detail
                         </a>
                         <ul class="dropdown-menu dropdownMenu" aria-labelledby="navbarDropdownMenuLink">
                             <li><a class="dropdown-item" href="contact.html">Əlaqə</a></li>
                             <li><a class="dropdown-item" href="whatwedo.html">Biz nə Edirik</a></li>
-                          
+
                         </ul>
                     </li>
                 </ul>
@@ -120,6 +136,7 @@
 
 
     <header>
+
         <section class="banner__slider">
             <div class="event-slider stick-dots">
                 <div class="slide">
@@ -127,12 +144,14 @@
                         <img src="" alt="" data-lazy="./Images/main-slider-1.jpg" class="full-image animated"
                             data-animation-in="zoomInImage" />
                     </div>
-                    <div class="slide__content slide__content__right">
+                    <div class="slide__content slide__content__right headerTitleText">
                         <div class="slide__content--headings text-right">
-                            <p class="animated top-title" data-animation-in="fadeInLeft" data-delay-in="0.2">
-                                Lorem ipsum dolor, sit amet consectetur?</p>
-                            <h2 class="animated title" data-animation-in="fadeInLeft">Lorem, ipsum dolor.</h2>
-                            <button class="btn-light btn button-custom animated text-white"
+                            <p class="animated top-title  txeTitle" data-animation-in="fadeInLeft" data-delay-in="0.2">
+                                DEFINE</p>
+                            <h2 class="animated title pTitle" data-animation-in="fadeInLeft">Lorem, ipsum
+                                dolor.</h2>
+
+                            <button class="btn-light aaaa btn button-custom animated text-white"
                                 data-animation-in="fadeInUp">LEARN MORE</button>
                         </div>
                     </div>
@@ -142,14 +161,14 @@
                         <img src="" alt="" data-lazy="./Images/main-slider-1.jpg" class="full-image animated"
                             data-animation-in="zoomInImage" />
                     </div>
-                    <div class="slide__content slide__content__left">
+                    <div class="slide__content slide__content__left headerTitleText">
                         <div class="slide__content--headings text-left">
-                            <p class="animated top-title" data-animation-in="fadeInRight" data-delay-in="0.2">
-                                Lorem ipsum dolor sit amet consectetur.</p>
-                            <h2 class="animated title" data-animation-in="fadeInRight">Lorem, ipsum dolor.
-
+                            <p class="animated top-title  txeTitle" data-animation-in="fadeInRight" data-delay-in="0.2">
+                                DEFINE </p>
+                            <h2 class="animated title pTitle" data-animation-in="fadeInRight">Lorem, ipsum
+                                dolor.
                             </h2>
-                            <button class="btn-light btn button-custom animated" data-animation-in="fadeInUp">LEARN
+                            <button class="btn-light btn button-custom animated aaaa" data-animation-in="fadeInUp">LEARN
                                 MORE</button>
                         </div>
                     </div>
@@ -162,6 +181,7 @@
                 </symbol>
             </svg>
         </section>
+
     </header>
 
     <main id="main">
@@ -169,87 +189,100 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4">
-
-                        <div class="Social">
-                            <i class="fa-solid fa-envelope"></i>
-                            <ul>
-                                <li>
-                                    <p>
-                                        INSTANT REPLIES
-                                    </p>
-                                    <span>Alienum phaedrum torquatos nec eu, vis detraxit periculis exnihil
-                                        expetendis</span>
-                                </li>
-                            </ul>
-                        </div>
+                        <a href="#" class="SocialWrapper">
+                            <div class="Social">
+                                <i class="fa-solid fa-envelope"></i>
+                                <ul>
+                                    <li>
+                                        <p>
+                                            INSTANT REPLIES
+                                        </p>
+                                        <span>Alienum phaedrum torquatos nec eu, vis detraxit periculis exnihil
+                                            expetendis</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
                     </div>
                     <div class="col-lg-4">
-
-                        <div class="Social">
-                            <i class="fa-solid fa-hourglass"></i>
-                            <ul>
-                                <li>
-                                    <p>EMBEDDED PLAYERS</p>
-                                    <span> Alienum phaedrum torquatos nec eu, vis detraxit periculis exnihil
-                                        expetendis</span>
-                                </li>
-                            </ul>
-                        </div>
+                        <a href="#" class="SocialWrapper">
+                            <div class="Social">
+                                <i class="fa-solid fa-hourglass"></i>
+                                <ul>
+                                    <li>
+                                        <p>EMBEDDED PLAYERS</p>
+                                        <span> Alienum phaedrum torquatos nec eu, vis detraxit periculis exnihil
+                                            expetendis</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
                     </div>
                     <div class="col-lg-4">
-                        <div class="Social">
-                            <i class="fa-solid fa-cloud-arrow-down"></i>
-                            <ul>
-                                <li>
-                                    <p>EMBEDDED PLAYERS</p>
-                                    <span>
-                                        Alienum phaedrum torquatos nec eu, vis detraxit periculis exnihil expetendis
-                                    </span>
-                                </li>
-                            </ul>
-                        </div>
+                        <a href="#" class="SocialWrapper">
+                            <div class="Social">
+                                <i class="fa-solid fa-cloud-arrow-down"></i>
+                                <ul>
+                                    <li>
+                                        <p>EMBEDDED PLAYERS</p>
+                                        <span>
+                                            Alienum phaedrum torquatos nec eu, vis detraxit periculis exnihil expetendis
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+
                     </div>
                     <div class="col-lg-4">
-                        <div class="Social">
-                            <i class="fa-solid fa-robot"></i>
-                            <ul>
-                                <li>
-                                    <p>EMBEDDED PLAYERS</p>
-                                    <span> Alienum phaedrum torquatos nec eu, vis detraxit periculis exnihil
-                                        expetendis</span>
-                                </li>
-                            </ul>
-                        </div>
+                        <a href="#" class="SocialWrapper">
+                            <div class="Social">
+                                <i class="fa-solid fa-robot"></i>
+                                <ul>
+                                    <li>
+                                        <p>EMBEDDED PLAYERS</p>
+                                        <span> Alienum phaedrum torquatos nec eu, vis detraxit periculis exnihil
+                                            expetendis</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+
                     </div>
                     <div class="col-lg-4">
-                        <div class="Social">
-                            <i class="fa-solid fa-house-chimney-user"></i>
-                            <ul>
-                                <li>
-                                    <p>EMBEDDED PLAYERS</p>
-                                    <span>
-                                        Alienum phaedrum torquatos nec eu, vis detraxit periculis exnihil expetendis
+                        <a href="#" class="SocialWrapper">
+                            <div class="Social">
+                                <i class="fa-solid fa-house-chimney-user"></i>
+                                <ul>
+                                    <li>
+                                        <p>EMBEDDED PLAYERS</p>
+                                        <span>
+                                            Alienum phaedrum torquatos nec eu, vis detraxit periculis exnihil expetendis
 
-                                    </span>
+                                        </span>
 
-                                </li>
-                            </ul>
-                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+
                     </div>
                     <div class="col-lg-4">
-                        <div class="Social">
-                            <i class="fa-brands fa-apple"></i>
-                            <ul>
-                                <li>
-                                    <p>EMBEDDED PLAYERS</p>
-                                    <span>
-                                        Alienum phaedrum torquatos nec eu, vis detraxit periculis exnihil expetendis
+                        <a href="#" class="SocialWrapper">
+                            <div class="Social">
+                                <i class="fa-brands fa-apple"></i>
+                                <ul>
+                                    <li>
+                                        <p>EMBEDDED PLAYERS</p>
+                                        <span>
+                                            Alienum phaedrum torquatos nec eu, vis detraxit periculis exnihil expetendis
 
-                                    </span>
+                                        </span>
 
-                                </li>
-                            </ul>
-                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -520,29 +553,6 @@
         </section>
 
 
-        <section id="OurSteller">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h1>OUR NEWSLETTER</h1>
-                        <form action="">
-
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <input type="text" placeholder="Type Your Email Here">
-                                </div>
-                            </div>
-
-                            <button type="submit">
-                                SEND
-                            </button>
-                        </form>
-
-                    </div>
-                </div>
-            </div>
-
-        </section>
 
         <section id="BlogPost">
             <div class="container">
@@ -553,57 +563,50 @@
                         </h1>
                     </div>
                     <div class="col-lg-4">
-                        <div class="BlogPostItem" data-aos="flip-up">
-                            <img src="Images/Main-home-blog-list-img-1-768x547.jpg" alt="">
-                            <h3>MEET OUR YOUNG AND WITTY CREW WE BET YOU’LL ENJOY IT</h3>
-                            <div class="SocialBlog">
-                                <div class="calendar">
-                                    <i class="fa-solid fa-calendar-days"></i>
-                                    <p>May 28, 2018</p>
-                                </div>
-                                <div class="Comment">
-                                    <i class="fa-solid fa-comment"></i>
-                                    <p>comments</p>
+                        <a href="#">
+                            <div class="BlogPostItem" data-aos="flip-up">
+                                <img src="Images/Main-home-blog-list-img-1-768x547.jpg" alt="">
+                                <h3>MEET OUR YOUNG AND WITTY CREW WE BET YOU’LL ENJOY IT</h3>
+                                <div class="SocialBlog">
+                                    <div class="calendar">
+                                        <i class="fa-solid fa-calendar-days"></i>
+                                        <p>May 28, 2018</p>
+                                    </div>
                                 </div>
                             </div>
-
-                        </div>
+                        </a>
 
                     </div>
                     <div class="col-lg-4">
-
-                        <div class="BlogPostItem" data-aos="flip-up">
-                            <img src="Images/Main-home-blog-list-img-2-768x547.jpg" alt="">
-                            <h3>
-                                MEET OUR YOUNG AND WITTY CREW WE BET YOU’LL ENJOY IT
-                            </h3>
-                            <div class="SocialBlog">
-                                <div class="calendar">
-                                    <i class="fa-solid fa-calendar-days"></i>
-                                    <p>May 28, 2018</p>
-                                </div>
-                                <div class="Comment">
-                                    <i class="fa-solid fa-comment"></i>
-                                    <p>comments</p>
+                        <a href="#">
+                            <div class="BlogPostItem" data-aos="flip-up">
+                                <img src="Images/Main-home-blog-list-img-2-768x547.jpg" alt="">
+                                <h3>
+                                    MEET OUR YOUNG AND WITTY CREW WE BET YOU’LL ENJOY IT
+                                </h3>
+                                <div class="SocialBlog">
+                                    <div class="calendar">
+                                        <i class="fa-solid fa-calendar-days"></i>
+                                        <p>May 28, 2018</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
+
                     </div>
                     <div class="col-lg-4">
-                        <div class="BlogPostItem" data-aos="flip-up">
-                            <img src="Images/Main-home-blog-list-img-3-768x547.jpg" alt="">
-                            <h3>MEET OUR YOUNG AND WITTY CREW WE BET YOU’LL ENJOY IT</h3>
-                            <div class="SocialBlog">
-                                <div class="calendar">
-                                    <i class="fa-solid fa-calendar-days"></i>
-                                    <p>May 28, 2018</p>
-                                </div>
-                                <div class="Comment">
-                                    <i class="fa-solid fa-comment"></i>
-                                    <p>comments</p>
+                        <a href="#">
+                            <div class="BlogPostItem" data-aos="flip-up">
+                                <img src="Images/Main-home-blog-list-img-3-768x547.jpg" alt="">
+                                <h3>MEET OUR YOUNG AND WITTY CREW WE BET YOU’LL ENJOY IT</h3>
+                                <div class="SocialBlog">
+                                    <div class="calendar">
+                                        <i class="fa-solid fa-calendar-days"></i>
+                                        <p>May 28, 2018</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -917,16 +920,19 @@
 
         <section id="Pattern" style="background-image: url(Images/Main-pattern-img.jpg);">
 
-            <div class="PatternHead">
-                <h1>MAKE YOUR AGENCY SHINE – SHOW THE WORLD YOUR UNIQUE & CREATIVE SIDE</h1>
+            <div class="WrapperPatter">
+                <div class="PatternHead">
+                    <h1>MAKE YOUR AGENCY SHINE – SHOW THE WORLD YOUR UNIQUE & CREATIVE SIDE</h1>
+                </div>
+
+                <div class="WrapperButton">
+                    <button type="submit">
+                        Learn MORE
+
+                    </button>
+                </div>
             </div>
 
-            <div class="WrapperButton">
-                <button type="submit">
-                    Learn MORE
-
-                </button>
-            </div>
         </section>
 
         <section id="Clients">
@@ -1158,7 +1164,7 @@
     <!-- Font Awsome  Social link istifadesi ucun -->
     <script src="https://kit.fontawesome.com/a447e57785.js" crossorigin="anonymous"></script>
 
-  
+
 
 </body>
 

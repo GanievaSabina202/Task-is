@@ -13,6 +13,7 @@ html {
     right           : 0;
     background-color: transparent;
     z-index         : 777777;
+    padding         : 25px 0px;
 
     #Student {
         display        : flex;
@@ -101,9 +102,9 @@ html {
             display        : flex;
             align-items    : center;
             justify-content: space-between;
-            font-size: 16px;
-            font-weight: 600;
-            text-transform: uppercase;
+            font-size      : 16px;
+            font-weight    : 600;
+            text-transform : uppercase;
         }
 
         .dropdownMenu {
@@ -184,17 +185,19 @@ html {
             }
         }
     }
-    .navbar-toggler{
+
+    .navbar-toggler {
         padding: 0 !important;
     }
 }
 
-.navbar-light .navbar-toggler{
+.navbar-light .navbar-toggler {
     border: none !important;
 }
-button:focus:not(:focus-visible){
-    outline:none !important;
-    box-shadow:none !important;
+
+button:focus:not(:focus-visible) {
+    outline   : none !important;
+    box-shadow: none !important;
 }
 
 

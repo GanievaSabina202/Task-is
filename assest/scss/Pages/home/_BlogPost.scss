@@ -1,67 +1,85 @@
 #BlogPost {
     background-color: $bgColor;
-    font-family: $firstFamily;
-    padding: 40px 0px;
-    .BlogPostItem {
-        overflow: hidden;
-        img {
-            max-width: 100%;
+    font-family     : $firstFamily;
+    padding         : 40px 0px;
+
+    a {
+        color: black;
+        .BlogPostItem {
             overflow: hidden;
-            transition: 0.4s all;
-            &:hover {
-                transform: translateX(11px);
-            }
-        }
-        h3 {
-            font-size: 30px;
-            line-height: 1.067em;
-            padding: 30px 10px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: 0.2s all;
-            @media (max-width:576px) {
-                font-size: 25px;
-                
-            }
-            &:hover {
-                color: $TextHoverColor;
-            }
-        }
-        .SocialBlog {
-            width: 240px;
-            @include FlexCenter(space-between, center, none);
-            .calendar {
-                @include FlexCenter(space-between, center, none);
-                p {
-                    margin: 0;
-                    margin-left: 15px;
-                    transition: 0.2s all;
-                    &:hover {
-                        color: $TextHoverColor;
-                    }
+
+            img {
+                max-width : 100%;
+                overflow  : hidden;
+                transition: 0.4s all;
+
+                &:hover {
+                    transform: translateX(11px);
                 }
             }
-            .Comment {
-                @extend .calendar;
+
+            h3 {
+                font-size  : 30px;
+                line-height: 1.067em;
+                padding    : 30px 10px;
+                font-weight: 600;
+                cursor     : pointer;
+                transition : 0.2s all;
+
+                @media (max-width:576px) {
+                    font-size: 25px;
+
+                }
+
+                &:hover {
+                    color: $TextHoverColor;
+                }
             }
-            @media (max-width:576px) {
-                margin: 20px 0px;
-                
+
+            .SocialBlog {
+                width: 240px;
+                @include FlexCenter(space-between, center, none);
+
+                .calendar {
+                    @include FlexCenter(space-between, center, none);
+
+                    p {
+                        margin     : 0;
+                        margin-left: 15px;
+                        transition : 0.2s all;
+
+                        &:hover {
+                            color: $TextHoverColor;
+                        }
+                    }
+                }
+
+                .Comment {
+                    @extend .calendar;
+                }
+
+                @media (max-width:576px) {
+                    margin: 20px 0px;
+
+                }
             }
         }
     }
+
     h1 {
-        font-size: $h1FontSize;
-        position: relative;
+        font-size  : $h1FontSize;
+        position   : relative;
         font-weight: 600;
         line-height: 1em;
-        padding: 60px 0px;
+        padding    : 60px 0px;
+
         &::before {
             @include BeforeLine;
         }
+
         @media (max-width:576px) {
             font-size: 43px;
-            
+
         }
     }
 }
