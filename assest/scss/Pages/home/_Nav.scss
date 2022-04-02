@@ -50,15 +50,15 @@ html {
         background-color: transparent;
 
         ul {
-            @include FlexCenter(flex-end, center, none);
+            @include FlexCenter(center, center, none);
 
             li {
-                margin-right: 45px;
+                margin-right: 35px;
 
                 a {
                     position   : relative;
                     font-family: $firstFamily;
-                    font-size  : 24px;
+                    font-size  : 23px;
                     font-weight: 600;
                     color      : white;
 
@@ -69,12 +69,20 @@ html {
                     &:hover::before {
                         width: 100%;
                     }
+
+                    @media (max-width:1199.9px) {
+                        font-size: 20px;
+                    }
                 }
 
                 .active {
                     &::before {
                         @include ActiveNavBefore;
                     }
+                }
+
+                @media (max-width:1199.9px) {
+                    margin-right: 23px;
                 }
             }
         }

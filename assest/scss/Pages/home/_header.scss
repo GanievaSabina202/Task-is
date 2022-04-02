@@ -3,15 +3,14 @@ header {
 
 
   .headerTitleText {
-    opacity           : 0;
-    -webkit-mask-image: linear-gradient(to left, #0000 38%, #000 40%);
-    -webkit-mask-size : 300%;
-    animation-delay   : 0.2s;
+    opacity                  : 0;
+    -webkit-mask-image       : linear-gradient(to left, #0000 38%, #000 40%);
+    -webkit-mask-size        : 300%;
+    animation-delay          : 2s;
+    animation                : text-wipe 2s infinite;
+    animation-timing-function: ease-in; 
+    animation-fill-mode: both;
 
-    animation-name           : text-wipe;
-    animation-duration       : 2s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
   }
 
   .top-title {
@@ -57,12 +56,11 @@ header {
   }
 
   .slide .slide__img img {
-    max-width                 : 100%;
-    height                    : auto;
-    opacity                   : 1 !important;
-    -webkit-animation-duration: 1s;
-    animation-duration        : 1s;
-    transition                : all 1s ease;
+    max-width         : 100%;
+    height            : auto;
+    opacity           : 1 !important;
+    animation-duration: 1s;
+    transition        : all .3s ease-in-out;
   }
 
   .slide .slide__content {
@@ -546,6 +544,12 @@ header {
   }
 }
 
+.OpenBtnIcons2 {
+  .BtnIcon {
+    color: white !important;
+  }
+}
+
 .OpenBtnIcons {
   position: relative;
   display : block;
@@ -568,8 +572,8 @@ header {
     content            : '';
     height             : 5px;
     width              : 5px;
+    color              : rgb(0, 0, 0) !important;
     top                : -3px;
-    color              : white !important;
 
     &:nth-child(3n+2) {
       left: 9px;
